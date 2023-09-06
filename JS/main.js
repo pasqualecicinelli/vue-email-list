@@ -23,7 +23,6 @@ createApp({
                     })
 
                 });
-
         } 
     },
 }).mount('#app')

@@ -43,10 +43,10 @@
 <body>
 
     <div class="container mt-5" id="app">
-        <ul>
-            <li v-for="(singleEmail , index) in emailCasuali">
-                
-                {{ index }} {{ singleEmail.emailCasuali }}
+        <ul v-if="emailCasuali.length == 10">
+            <li v-for=" (singleEmail , index) in emailCasuali ">
+
+                {{(index + 1) + ') Email: ' + singleEmail.emailCasuali }}
 
             </li>
 
