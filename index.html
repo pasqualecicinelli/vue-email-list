@@ -42,11 +42,15 @@
 
 <body>
 
-    <div class="container" id="app">
-      <!--  <ul>
-            <li></li>
-            
-        </ul>-->
+    <div class="container mt-5" id="app">
+        <ul>
+            <li v-for="(singleEmail , index) in emailCasuali">
+
+                {{ index }} {{ singleEmail.emailCasuali }}
+
+            </li>
+
+        </ul>
     </div>
 
 </body>
