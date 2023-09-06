@@ -4,14 +4,13 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            emailCasuali: [''],
+            emailCasuali: [],
             emailActive: 0,
         };
 
     },
 
     mounted() {
-
 
         for (let i = 0; i < 10; i++) {
             axios
@@ -22,10 +21,10 @@ createApp({
                     this.emailCasuali.push({
                         emailCasuali: randomEmail,
                     })
-                    console.log(this.emailCasuali);
+
                 });
 
-        }
+        } 
     },
 }).mount('#app')
 
